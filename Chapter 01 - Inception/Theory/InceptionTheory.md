@@ -129,4 +129,14 @@ When deploying a React application to a production environment, it is best pract
 During development, developers may prefer to use **`react.development.js`** (and **`react-dom.development.js`**) to take advantage of the helpful error messages and development tools that assist in identifying and resolving issues during the development and testing phase. However, it's essential to switch to the production version before deploying the application to a live environment to achieve better performance and user experience.
 
 ## Q What is `async and defer`?
-A: 
+A:
+
+async:
+Downloads and executes scripts as soon as possible.
+Execution order is not guaranteed.
+Good for independent scripts.
+
+defer:
+Downloads scripts during HTML parsing but executes them after parsing is complete.
+Maintains the execution order as they appear in the document.
+Good for scripts that need to wait until the DOM is fully parsed.
